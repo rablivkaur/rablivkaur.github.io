@@ -2,96 +2,121 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rabliv Kaur | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+    }
     body {
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f0f2f5;
       color: #333;
+      line-height: 1.6;
     }
     header {
-      background-color: #1e1e1e;
+      background: #4b0082;
       color: white;
-      padding: 40px 20px;
+      padding: 3rem 1rem;
       text-align: center;
     }
-    h1 {
-      margin: 0;
+    header h1 {
+      font-size: 2.5rem;
+    }
+    header p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
     }
     section {
-      padding: 30px 20px;
-      max-width: 800px;
+      padding: 2rem 1rem;
+      max-width: 900px;
       margin: auto;
     }
     h2 {
-      color: #2c3e50;
-      margin-top: 40px;
+      color: #4b0082;
+      margin-bottom: 1rem;
     }
-    .project {
-      background: #fff;
-      padding: 15px;
-      margin: 10px 0;
-      border-left: 4px solid #3498db;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    .contact a {
+      display: block;
+      margin: 0.5rem 0;
+      color: #4b0082;
+      text-decoration: none;
     }
     footer {
-      text-align: center;
-      padding: 20px;
-      background: #1e1e1e;
+      background: #333;
       color: white;
-      margin-top: 50px;
-    }
-    a {
-      color: #3498db;
-      text-decoration: none;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Rabliv Kaur</h1>
-  <p>CSE Student | GitHub Student Developer</p>
-</header>
+  <header>
+    <h1>Hi, I'm Rabliv Kaur 👩‍💻</h1>
+    <p>First-year CSE Student | Passionate about coding and building cool things.</p>
+  </header>
 
-<section>
-  <h2>About Me</h2>
-  <p>
-    I’m a first-year Computer Science Engineering student passionate about coding, software development, and learning new technologies. I’m currently exploring Python, web development, Git & GitHub, and open-source collaboration.
-  </p>
+  <section>
+    <h2>👩‍🎓 About Me</h2>
+    <p>I'm a Computer Science student exploring the world of web development, Python, and open-source projects. I love creating tools and content that help others learn and grow.</p>
+  </section>
 
-  <h2>Skills</h2>
-  <p>Python, C++, HTML, CSS, JavaScript (learning), Git, GitHub, Canva, Clipchamp</p>
+  <section>
+    <h2>💻 Skills</h2>
+    <div class="skills">
+      <div class="card">Python</div>
+      <div class="card">C++</div>
+      <div class="card">HTML & CSS</div>
+      <div class="card">Git & GitHub</div>
+      <div class="card">VS Code</div>
+      <div class="card">Canva & Clipchamp</div>
+    </div>
+  </section>
 
-  <h2>Projects</h2>
-  <div class="project">
-    <strong>📱 To-Do List Web App</strong><br/>
-    A simple and responsive task manager built with HTML, CSS, and JavaScript.  
-    <a href="https://github.com/your-username/todo-list" target="_blank">View on GitHub</a>
-  </div>
-  <div class="project">
-    <strong>🖥 Python Mini Games</strong><br/>
-    Console-based games including number guessing and quiz app.  
-    <a href="https://github.com/your-username/python-mini-games" target="_blank">View on GitHub</a>
-  </div>
-  <div class="project">
-    <strong>📘 Class 11 IP Notes</strong><br/>
-    Well-structured Python and computer system notes for CBSE students.  
-    <a href="https://github.com/your-username/ip-python-notes" target="_blank">View on GitHub</a>
-  </div>
+  <section>
+    <h2>🚀 Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>To-Do List Web App</h3>
+        <p>A simple responsive task manager made with HTML, CSS, and JS.</p>
+      </div>
+      <div class="card">
+        <h3>Python Mini Games</h3>
+        <p>Fun console-based games built with basic Python logic.</p>
+      </div>
+      <div class="card">
+        <h3>Class 11 IP Notes</h3>
+        <p>Structured and easy-to-understand notes for Python beginners.</p>
+      </div>
+    </div>
+  </section>
 
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a><br/>
-     LinkedIn: <a href="https://linkedin.com/in/your-link" target="_blank">linkedin.com/in/your-link</a><br/>
-     GitHub: <a href="https://github.com/your-username" target="_blank">github.com/your-username</a></p>
-</section>
+  <section>
+    <h2>📬 Contact Me</h2>
+    <div class="contact">
+      <a href="mailto:your.email@example.com">📧 your.email@example.com</a>
+      <a href="https://linkedin.com/in/your-link" target="_blank">💼 LinkedIn</a>
+      <a href="https://github.com/rablivkaur" target="_blank">🌐 GitHub</a>
+    </div>
+  </section>
 
-<footer>
-  &copy; 2025 Rabliv Kaur | Built with 💻 & ❤
-</footer>
+  <footer>
+    Made with ❤ by Rabliv Kaur
+  </footer>
 
 </body>
 </html>
